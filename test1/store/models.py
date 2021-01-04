@@ -8,6 +8,7 @@ class Product(models.Model):
     feature = models.CharField(max_length=200)
     digital = models.BooleanField(default=False)
     image = models.ImageField()
+    vendor = models.CharField(max_length=100,default='')
 
     def __str__(self):
         return self.name 
