@@ -42,7 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'components',
     'store',
+    'state',
+    'django.contrib.gis',
     'rest_framework',
+    'rest_framework_gis',
     'corsheaders', 
     
 ]
@@ -128,5 +131,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = Path(BASE_DIR,'static/')
 MEDIA_ROOT = Path(BASE_DIR,'media/')
 MEDIA_URL = '/media/'
